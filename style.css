@@ -1,0 +1,123 @@
+@import"https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap";
+:root{
+---blue:#097EAD;
+---black:#000;
+---Gray:#6E7970;
+---White:#f9f9f9;
+---aqua:aqua;
+}
+body{
+    width: 500px;
+    margin: 4% auto;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 5px;
+    font-size: 28px;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    background-color: var(---aqua);
+}
+.Calculator {
+    padding: 20px;
+    -webkit-box-shadow:0px 1px 4px 0px var(---black); 
+    box-shadow: 0px 1px 4px 0px var(---black);
+    border-radius: 1px;
+    background-color: var(---White);
+}
+
+.Input{
+    border:  1px solid var(---Gray);
+    border-radius: 1px;
+    height:80px;
+    padding-right: 15px;
+    padding-top: 10px;
+    text-align: right;
+    margin-right: 6px;
+    font-size: 40px;
+    overflow-x: auto;
+    transition: all .2s ease-in-out;
+}
+.Input:hover{
+    border: 1px solid var(---blue);
+    -webkit-box-shadow:inset 0px 1px 4px 0px var(---black);
+    box-shadow: inset 0px 1px 4px 0px  var(---black);
+}
+/*
+.Buttons{}
+
+.Operators{}
+*/
+.Operators div{
+    display: inline-block;
+    border: 1px solid var(---Gray);
+    border-radius: 1px;
+    width: 80px;
+    text-align:center;
+    padding: 8px;
+    margin: 15px 4px 15px 0;
+    cursor: pointer;
+    background-color: var(---Gray);
+    transition: border-color .2s ease-in-out,background-color .2s, box-shadow.2s;
+}
+
+.Operators div:hover {
+    background-color: var(---Gray);
+    -webkit-box-shadow: 0px 1px 4px 0px var(---white);
+    box-shadow: 0px 1px 4px 0px var(---black);
+    border-color: var(---black);
+}
+
+.Operators div:active{
+    font-weight: bold;
+}
+
+.leftPanel{
+    display: inline-block;
+}
+
+.Numbers div{
+    display: inline-block;
+    border: 1px solid var(---Gray);
+    border-radius: 1px;
+    width: 80px;
+    text-align: center;
+    padding: 8px;
+    margin: 10px 4xp 10px 0;
+    cursor: pointer;
+    background-color:var(---White);
+    transition: border-color.2s ease-in-out, background-color .2s, box-shadow.2s;
+}
+.Numbers div:hover{
+    background-color: var(---White);
+    -webkit-box-shadow: 0px 1px 4px 0px var(---black);
+    box-shadow: 0px 1px 4px 0px var(---black);
+    border-color: var(---Gray);
+}
+.Number div:active{
+    font-weight: bold;
+}
+
+div.equal{
+    display: inline-block;
+    border: 1px solid var(---black);
+    border-radius: 1px;
+    width: 80px;
+    text-align: center;
+    padding: 80px 10px;
+    margin: 10px 6px 10px 0;
+    margin-left: 10px;
+    vertical-align: top;
+    cursor: pointer;
+    color: var(---black);
+    background-color: var(---Gray);
+    transition: all .2s ease-in-out;
+}
+div.equal:hover{
+    background-color:var(---Gray);
+    -webkit-box-shadow:0px 1px 4px 0px var(---black);
+    box-shadow: 0px 1px 4px 0px var(---black);
+    border-color:var(---black);
+}
+div.equal:active{
+    font-weight: bold;
+}
